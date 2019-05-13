@@ -6,6 +6,7 @@ let apiRoutes = require("./routes")
 let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 
+console.log("I AM HERE>>> SERVER")
 //middleware
 // app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: true}))
