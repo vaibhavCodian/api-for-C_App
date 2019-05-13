@@ -1,13 +1,13 @@
 const express = require('express')
 const app = express()
-const morgan = require('morgan');
+// const morgan = require('morgan');
 var port = 80
 let apiRoutes = require("./routes")
 let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 
 //middleware
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 mongoose.connect('mongodb://api:12345678shit@ds111065.mlab.com:11065/shit',{ useNewUrlParser: true });
