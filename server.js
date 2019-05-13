@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 
 // route
 app.get('/', (req, res) => {
-    res.send("I am crap");
+    res.send("I am");
 });
 app.use('/shit', apiRoutes)
 
